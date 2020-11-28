@@ -33,6 +33,6 @@ resource "panos_address_group" "address_group" {
 
   name          = each.value.name
   description   = each.value.description
-  dynamic_match = each.value.tags_to_match
+  dynamic_match = each.value.dynamic_match
   tags          = each.value.tags
 }

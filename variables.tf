@@ -59,7 +59,7 @@ variable "default_address_group" {
     name          = "default"
     description   = ""
     dynamic_match = null
-    tags          = null
+    tags          = []
     vsys          = null
   }
 }
