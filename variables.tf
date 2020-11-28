@@ -49,8 +49,8 @@ variable "default_address_group" {
     {
       name          = string
       description   = string
-      dynamic_match = string
-      tags          = string
+      dynamic_match = list(string)
+      tags          = list(string)
       vsys          = string
     }
   )
