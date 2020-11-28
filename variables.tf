@@ -41,3 +41,25 @@ variable "default_tag" {
     vsys    = null
   }
 }
+
+variable "address_groups" {}
+
+variable "default_address_group" {
+  type = object(
+    {
+      name          = string
+      description   = string
+      dynamic_match = string
+      tags          = string
+      vsys          = string
+    }
+  )
+
+  default = {
+    name          = "default"
+    description   = ""
+    dynamic_match = null
+    tags          = null
+    vsys          = null
+  }
+}
