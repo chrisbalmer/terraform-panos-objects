@@ -35,4 +35,8 @@ resource "panos_address_group" "address_group" {
   description   = each.value.description
   dynamic_match = each.value.dynamic_match
   tags          = each.value.tags
+
+  depends_on = [
+    panos_administrative_tag.tag
+  ]
 }
