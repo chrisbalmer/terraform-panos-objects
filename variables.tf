@@ -113,7 +113,7 @@ variable "default_service_group" {
   default = {
     name     = null
     services = null
-    tags     = ["service group"]
+    tags     = null
     vsys     = null
   }
 }
